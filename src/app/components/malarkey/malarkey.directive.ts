@@ -1,12 +1,12 @@
 module inventoryApp {
   'use strict';
 
-  interface IProjectsScope extends ng.IScope {
+  interface IProjectsScope extends angular.IScope {
     extraValues: any[];
   }
 
   /** @ngInject */
-  export function acmeMalarkey(malarkey: any): ng.IDirective {
+  export function acmeMalarkey(malarkey: any): angular.IDirective {
 
     return {
       restrict: 'E',
@@ -57,10 +57,10 @@ module inventoryApp {
   class MalarkeyController {
     public contributors: any[];
 
-    private $log: ng.ILogService;
+    private $log: angular.ILogService;
     private githubContributor: GithubContributor;
 
-    constructor($log: ng.ILogService, githubContributor: GithubContributor) {
+    constructor($log: angular.ILogService, githubContributor: GithubContributor) {
       this.contributors = [];
 
       this.$log = $log;

@@ -7,7 +7,7 @@ module inventoryApp {
     public classAnimation: string;
 
     /* @ngInject */
-    constructor ($timeout: ng.ITimeoutService, webDevTec: WebDevTecService, toastr: Toastr) {
+    constructor ($timeout: angular.ITimeoutService, webDevTec: WebDevTecService, toastr: Toastr) {
       this.awesomeThings = new Array();
       this.webDevTec = webDevTec;
       this.classAnimation = '';

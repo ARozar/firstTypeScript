@@ -4,7 +4,7 @@ module inventoryApp {
 
   export class RunBlock {
     /** @ngInject */
-    constructor($log: ng.ILogService) {
+    constructor($log: angular.ILogService) {
       $log.debug('runBlock end');
     }
 
