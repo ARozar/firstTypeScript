@@ -10,6 +10,12 @@ module inventoryApp {
           templateUrl: 'app/main/main.html',
           controller: 'MainController',
           controllerAs: 'main'
+          })
+        .state('product', {
+          url: '/product',
+          template: 'Hello',
+          controller: 'ProductController',
+          controllerAs: 'vm'
         });
 
       $urlRouterProvider.otherwise('/');
