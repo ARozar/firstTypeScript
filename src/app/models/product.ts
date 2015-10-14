@@ -1,4 +1,4 @@
-module app.models {
+module inventoryApp.models {
     export interface IProduct {
         productId: number;
         name: string;
